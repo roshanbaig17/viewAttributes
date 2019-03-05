@@ -22,7 +22,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [[Crashlytics sharedInstance] crash];
+//    [[Crashlytics sharedInstance] crash];
 }
 
 - (void)didReceiveMemoryWarning {
