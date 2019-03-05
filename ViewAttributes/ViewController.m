@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <Crashlytics/Crashlytics.h>
 
 @interface ViewController ()
 
@@ -19,6 +20,10 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+//    [[Crashlytics sharedInstance] crash];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
